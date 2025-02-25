@@ -347,49 +347,49 @@ executable countzeros
       base >=4.12 && <5
   default-language: Haskell2010
 
-executable covid
-  main-is: Main.hs
-  other-modules:
-      CovidCSVParser
-      CovidData
-      Paths_hid_examples
-  autogen-modules:
-      Paths_hid_examples
-  hs-source-dirs:
-      ch14/covid
-  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags
-  build-depends:
-      attoparsec >=0.13 && <0.15
-    , base >=4.12 && <5
-    , bytestring >=0.10 && <0.13
-    , containers >=0.5 && <0.8
-    , lens >=4.17 && <5.4
-    , resourcet >=1.2 && <1.4
-    , streaming >=0.2.2 && <0.4
-    , streaming-bytestring >=0.1.7 && <0.4
-    , streaming-utils ==0.2.*
-    , text >=1.2 && <2.2
-    , text-show >=3.0 && <4
-    , time >=1.8 && <1.15
-  default-language: Haskell2010
+-- executable covid
+--   main-is: Main.hs
+--   other-modules:
+--       CovidCSVParser
+--       CovidData
+--       Paths_hid_examples
+--   autogen-modules:
+--       Paths_hid_examples
+--   hs-source-dirs:
+--       ch14/covid
+--   ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags
+--   build-depends:
+--       attoparsec >=0.13 && <0.15
+--     , base >=4.12 && <5
+--     , bytestring >=0.10 && <0.13
+--     , containers >=0.5 && <0.8
+--     , lens >=4.17 && <5.4
+--     , resourcet >=1.2 && <1.4
+--     , streaming >=0.2.2 && <0.4
+--     , streaming-bytestring >=0.1.7 && <0.4
+--     , streaming-utils ==0.2.*
+--     , text >=1.2 && <2.2
+--     , text-show >=3.0 && <4
+--     , time >=1.8 && <1.15
+--   default-language: Haskell2010
 
-executable csv-simple
-  main-is: ch14/csv-simple.hs
-  other-modules:
-      Paths_hid_examples
-  autogen-modules:
-      Paths_hid_examples
-  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags
-  build-depends:
-      attoparsec >=0.13 && <0.15
-    , base >=4.12 && <5
-    , bytestring >=0.10 && <0.13
-    , resourcet >=1.2 && <1.4
-    , streaming >=0.2.2 && <0.4
-    , streaming-bytestring >=0.1.7 && <0.4
-    , streaming-utils ==0.2.*
-    , text >=1.2 && <2.2
-  default-language: Haskell2010
+-- executable csv-simple
+--   main-is: ch14/csv-simple.hs
+--   other-modules:
+--       Paths_hid_examples
+--   autogen-modules:
+--       Paths_hid_examples
+--   ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags
+--   build-depends:
+--       attoparsec >=0.13 && <0.15
+--     , base >=4.12 && <5
+--     , bytestring >=0.10 && <0.13
+--     , resourcet >=1.2 && <1.4
+--     , streaming >=0.2.2 && <0.4
+--     , streaming-bytestring >=0.1.7 && <0.4
+--     , streaming-utils ==0.2.*
+--     , text >=1.2 && <2.2
+--   default-language: Haskell2010
 
 executable dicegame
   main-is: dicegame.hs
