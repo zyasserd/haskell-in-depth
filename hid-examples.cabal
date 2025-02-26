@@ -705,59 +705,59 @@ executable generic-sql
     , text-show >=3.0 && <4
   default-language: Haskell2010
 
-executable hasql
-  other-modules:
-      Paths_hid_examples
-  autogen-modules:
-      Paths_hid_examples
-  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags
-  build-depends:
-      base >=4.12 && <5
-  default-language: Haskell2010
-  if flag(with-pg)
-    main-is: Main.hs
-    other-modules:
-        FilmInfo.Data
-        Statements
-        Sessions
-        DBActions
-    hs-source-dirs:
-        ch15/hasql
-        ch15
-    build-depends:
-        hasql >=1.3 && <1.7
-      , hasql-th ==0.4.*
-      , mtl >=2.0 && <2.4
-      , profunctors >=5.3 && <5.7
-      , text >=1.2 && <2.2
-      , text-show >=3.0 && <4
-      , vector >=0.11 && <0.14
-  else
-    main-is: empty/Main.hs
+-- executable hasql
+--   other-modules:
+--       Paths_hid_examples
+--   autogen-modules:
+--       Paths_hid_examples
+--   ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags
+--   build-depends:
+--       base >=4.12 && <5
+--   default-language: Haskell2010
+--   if flag(with-pg)
+--     main-is: Main.hs
+--     other-modules:
+--         FilmInfo.Data
+--         Statements
+--         Sessions
+--         DBActions
+--     hs-source-dirs:
+--         ch15/hasql
+--         ch15
+--     build-depends:
+--         hasql >=1.3 && <1.7
+--       , hasql-th ==0.4.*
+--       , mtl >=2.0 && <2.4
+--       , profunctors >=5.3 && <5.7
+--       , text >=1.2 && <2.2
+--       , text-show >=3.0 && <4
+--       , vector >=0.11 && <0.14
+--   else
+--     main-is: empty/Main.hs
 
-executable hdbc
-  other-modules:
-      Paths_hid_examples
-  autogen-modules:
-      Paths_hid_examples
-  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags
-  build-depends:
-      base >=4.12 && <5
-  default-language: Haskell2010
-  if flag(with-pg)
-    main-is: hdbc.hs
-    other-modules:
-        FilmInfo.Data
-    hs-source-dirs:
-        ch15
-    build-depends:
-        HDBC >=2.3 && <2.5
-      , HDBC-postgresql >=2.4 && <2.6
-      , convertible >=1.0 && <1.2
-      , text >=1.2 && <2.2
-      , text-show >=3.0 && <4
-  else
-    main-is: empty/Main.hs
+-- executable hdbc
+--   other-modules:
+--       Paths_hid_examples
+--   autogen-modules:
+--       Paths_hid_examples
+--   ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags
+--   build-depends:
+--       base >=4.12 && <5
+--   default-language: Haskell2010
+--   if flag(with-pg)
+--     main-is: hdbc.hs
+--     other-modules:
+--         FilmInfo.Data
+--     hs-source-dirs:
+--         ch15
+--     build-depends:
+--         HDBC >=2.3 && <2.5
+--       , HDBC-postgresql >=2.4 && <2.6
+--       , convertible >=1.0 && <1.2
+--       , text >=1.2 && <2.2
+--       , text-show >=3.0 && <4
+--   else
+--     main-is: empty/Main.hs
 
 executable hello
   main-is: intro/hello.hs
@@ -952,36 +952,36 @@ executable nummod-rank-n
       base >=4.12 && <5
   default-language: Haskell2010
 
-executable opaleye
-  other-modules:
-      Paths_hid_examples
-  autogen-modules:
-      Paths_hid_examples
-  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags
-  build-depends:
-      base >=4.12 && <5
-  default-language: Haskell2010
-  if flag(with-pg)
-    main-is: Main.hs
-    other-modules:
-        FilmInfo.Data
-        FilmInfo.FromField
-        Tables
-        Queries
-        DBActions
-    hs-source-dirs:
-        ch15/opaleye
-        ch15
-    build-depends:
-        bytestring >=0.10 && <0.13
-      , opaleye >=0.8 && <0.11
-      , postgresql-simple >=0.5 && <0.7
-      , product-profunctors ==0.11.*
-      , profunctors >=5.3 && <5.7
-      , text >=1.2 && <2.2
-      , text-show >=3.0 && <4
-  else
-    main-is: empty/Main.hs
+-- executable opaleye
+--   other-modules:
+--       Paths_hid_examples
+--   autogen-modules:
+--       Paths_hid_examples
+--   ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags
+--   build-depends:
+--       base >=4.12 && <5
+--   default-language: Haskell2010
+--   if flag(with-pg)
+--     main-is: Main.hs
+--     other-modules:
+--         FilmInfo.Data
+--         FilmInfo.FromField
+--         Tables
+--         Queries
+--         DBActions
+--     hs-source-dirs:
+--         ch15/opaleye
+--         ch15
+--     build-depends:
+--         bytestring >=0.10 && <0.13
+--       , opaleye >=0.8 && <0.11
+--       , postgresql-simple >=0.5 && <0.7
+--       , product-profunctors ==0.11.*
+--       , profunctors >=5.3 && <5.7
+--       , text >=1.2 && <2.2
+--       , text-show >=3.0 && <4
+--   else
+--     main-is: empty/Main.hs
 
 executable ordered-threads
   main-is: ch16/ordered-threads.hs
@@ -1030,29 +1030,30 @@ executable person-text
     , text-show >=3.0 && <4
   default-language: Haskell2010
 
-executable pg-simple
-  other-modules:
-      Paths_hid_examples
-  autogen-modules:
-      Paths_hid_examples
-  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags
-  build-depends:
-      base >=4.12 && <5
-  default-language: Haskell2010
-  if flag(with-pg)
-    main-is: pg-simple.hs
-    other-modules:
-        FilmInfo.Data
-        FilmInfo.FromField
-    hs-source-dirs:
-        ch15
-    build-depends:
-        bytestring >=0.10 && <0.13
-      , postgresql-simple >=0.5 && <0.7
-      , text >=1.2 && <2.2
-      , text-show >=3.0 && <4
-  else
-    main-is: empty/Main.hs
+-- -- Ambiguous values for modulePath field: '"pg-simple.hs"' and '"empty/Main.hs"'
+-- executable pg-simple
+--   other-modules:
+--       Paths_hid_examples
+--   autogen-modules:
+--       Paths_hid_examples
+--   ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags
+--   build-depends:
+--       base >=4.12 && <5
+--   default-language: Haskell2010
+--   if flag(with-pg)
+--     main-is: pg-simple.hs
+--     other-modules:
+--         FilmInfo.Data
+--         FilmInfo.FromField
+--     hs-source-dirs:
+--         ch15
+--     build-depends:
+--         bytestring >=0.10 && <0.13
+--       , postgresql-simple >=0.5 && <0.7
+--       , text >=1.2 && <2.2
+--       , text-show >=3.0 && <4
+--   else
+--     main-is: empty/Main.hs
 
 executable ping-client
   main-is: client.hs
