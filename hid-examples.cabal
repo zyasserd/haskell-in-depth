@@ -137,7 +137,7 @@ library radar-lib
       Radar
   hs-source-dirs:
       ch02/radar
-  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags -Wno-error=x-partial
+  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags 
   build-depends:
       base >=4.12 && <5
   default-language: Haskell2010
@@ -176,7 +176,7 @@ library shunting-yard
       ShuntingYard, Expr
   hs-source-dirs:
       expr
-  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags -Wno-error=x-partial
+  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags 
   build-depends:
       base >=4.12 && <5
     , expr-simple
@@ -560,7 +560,7 @@ executable dynvalues-gadt
       Paths_hid_examples
   other-extensions:
       GADTs
-  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags -Wno-error=x-partial
+  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags 
   build-depends:
       base >=4.12 && <5
   default-language: Haskell2010
@@ -591,7 +591,7 @@ executable evalrpn1
       EvalRPN
   hs-source-dirs:
       expr/rpn
-  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags -Wno-error=x-partial
+  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags 
   build-depends:
       base >=4.12 && <5
     , mtl >=2.0 && <2.4
@@ -603,7 +603,7 @@ executable evalrpn2
       EvalRPNTrans
   hs-source-dirs:
       expr/rpn
-  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags -Wno-error=x-partial
+  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags 
   build-depends:
       base >=4.12 && <5
     , mtl >=2.0 && <2.4
@@ -622,7 +622,7 @@ executable evalrpn3
       UndecidableInstances
       InstanceSigs
       LambdaCase
-  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags -Wno-error=x-partial
+  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags 
   build-depends:
       base >=4.12 && <5
     , mtl >=2.0 && <2.4
@@ -849,7 +849,7 @@ executable isprime
       IsPrime
   hs-source-dirs:
       ch09/isprime
-  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags -Wno-error=x-partial
+  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags 
   build-depends:
       base >=4.12 && <5
     , isprime-lib
@@ -1101,7 +1101,7 @@ executable prefix-postfix
       ShuntingYard
   hs-source-dirs:
       expr
-  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags -Wno-error=x-partial
+  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags 
   build-depends:
       base >=4.12 && <5
     , mtl >=2.0 && <2.4
@@ -1142,7 +1142,7 @@ executable radar
       ch02/radar
   other-extensions:
       DeriveAnyClass
-  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags -Wno-error=x-partial
+  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags 
   build-depends:
       base >=4.12 && <5
     , fmt >=0.5 && <0.7
@@ -1519,7 +1519,7 @@ executable vocab1
   main-is: vocab1.hs
   hs-source-dirs:
       ch01
-  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags -Wno-error=x-partial
+  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans -Wno-error=unrecognised-warning-flags 
   build-depends:
       base >=4.12 && <5
     , text >=1.2 && <2.2

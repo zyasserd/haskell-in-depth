@@ -1,38 +1,26 @@
 {
-  inputs = {
-    nixpkgs.url = "nixpkgs/nixos-unstable";
-  };
+  inputs = { nixpkgs.url = "nixpkgs/nixos-unstable"; };
 
   outputs = { self, nixpkgs }:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
+      ghcVersion = "96";
+      ghc = "ghc${ghcVersion}";
+      haskellPkgs = pkgs.haskell.packages.${ghc};
+
     in {
-      # TODO: what is the best practise for this?
+      devShells.${system}.default = haskellPkgs.shellFor {
+        # packages is used differently here compared to other devShells.
+        # Typical usage is: hpkgs: [ (hpkgs.callPackage ./my-project.nix { }) ].
+        packages = hpkgs: [ ];
 
-      devShells.${system}.default = pkgs.mkShell {
-        buildInputs = [
-          # Errors:
-          # - ghc810
-          #     - `cabal build` -> requires GHC2021 which is not supported
-          # - pkgs.haskell.packages.ghc810.ghcWithPackages
-          #     - nix error -> build failed semaphore
-          # - pkgs.haskell.packages.ghc{947,982,964}
-          #     - nix error -> build from scratch
-
-          (pkgs.haskellPackages.ghcWithPackages (pkgs: with pkgs; [
-            cabal-install
-            haskell-language-server
-            stylish-haskell
-          ]))
-          
-          # FIXME: figure out a way to automate this
-          # required for some package (which?) in `executable suntimes`
-          pkgs.zlib          
+        nativeBuildInputs = [
+          haskellPkgs.haskell-language-server
+          pkgs.cabal-install
+          # pkgs.cabal2nix
+          pkgs.stylish-haskell
         ];
-
-        # Change the prompt to show that you are in a devShell
-        shellHook = "export PS1='\\e[1;34mHASK ❯ \\e[0m'";
       };
     };
 }
